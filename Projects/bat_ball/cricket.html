@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Cricket Game</title>
+  <style>
+    body{
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <h1>Bat Ball Stump Game</h1>
+  <button onclick="
+  //this will generate random number between 0 and 3
+  let randomNumber = Math.random() * 3;
+  let computerChose;
+  if(randomNumber > 0 && randomNumber <=1 ){
+     computerChoice ='Bat';
+    // console.log('computer choice is Bat')
+  }else if (randomNumber > 1 && randomNumber <=2)
+  {
+    computerChoice = 'Ball';
+    // console.log('computer choice is Ball')
+  }else{
+    computerChoice = 'Stump'
+    // console.log('computer choice is Stump');
+  } 
+  const computerChoiceMsg = `Computer choice is ${computerChoice}`;
+
+  let resultmsg;
+
+  if(computerChoice === 'Ball'){
+    resultmsg = 'User won.'
+  }else if (computerChose==='Bat'){
+    resultmsg ='It is a tie';
+  }else if (computerChoice === 'Stump'){
+    resultmsg ='computer has won';
+  }
+  alert(`, ${computerChoiceMsg} and ${resultmsg}`)
+
+
+">Bat</button>
+
+<Button 
+>Ball</Button>
+<button>Stump</button>
+
+
+  
+</body>
+</html>
